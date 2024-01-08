@@ -1,0 +1,29 @@
+# def find(*num):
+#     return sum(num)
+# print(find(1,2,3,4,5))
+
+def find(*args):
+    
+--------------------------
+
+def printHello():
+    print("Hello")
+
+def showInfo(name, age, phoneNumber="no number"):
+    print("Name {0} age {1} phone number {2}".format(name, age, phoneNumber))
+
+def getAvg(*number):
+    sum = 0
+    for i in number:
+        sum += i
+    return sum / len(number)
+
+def dosmop(x,y,operation):
+    return operation(x,y)
+
+showInfo(name = "x",age = 23,phoneNumber = "0000000000")
+
+square = lambda x: x*x
+print(square(5))
+
+print(dosmop(5,3, lambda x, y: x+y))
